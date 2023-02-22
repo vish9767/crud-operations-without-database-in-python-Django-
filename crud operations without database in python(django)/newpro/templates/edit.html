@@ -1,0 +1,12 @@
+<html>
+<head><title></title></head>
+<body>
+    <h1 style="text-align:center">Edit your data</h1>
+<form action="save" method="post">
+{%csrf_token%}
+<h2 style="text-align:center">First Name <input type="text" name="n4" value={{e.fname}} ></h2>
+<h2 style="text-align:center">Last  Name <input type="text" name="n5" value={{e.lname}}></h2>
+<h2 style="text-align:center"><button type="submit" value={{e.id}} name="id">Save</button></h2>
+</form>    
+</body>
+</html>

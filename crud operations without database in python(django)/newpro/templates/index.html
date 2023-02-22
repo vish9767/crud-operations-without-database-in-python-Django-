@@ -1,0 +1,14 @@
+<html>
+<head><title>new page</title></head>
+<body>
+<form action="add">
+<button type="submit">Record</button>
+</form>
+<form action="add" method="post">
+{% csrf_token %}
+<h2 style="text-align:center">First Name<input type="text" name='n1' placeholder="first_name" required></h2>
+<h2 style="text-align:center">Last Name<input type="text" name='n2' placeholder="last_name" required></h2>
+<h2 style="text-align:center"><input type="submit"></h2>
+</form>
+</body>
+</html>
